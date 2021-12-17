@@ -11,9 +11,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "interface1.1.0.0", "..\inte
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "interface2.0.0.0", "..\interface2.0.0.0\interface2.0.0.0.csproj", "{FD67F77A-1AA4-44BB-AAD7-F0AEDB1A8C02}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VersionChecker", "..\dependencychecker\VersionChecker.csproj", "{C212C543-43EF-42C5-A9D5-AE18FDC3E889}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VersionChecker", "..\versionchecker\VersionChecker.csproj", "{C212C543-43EF-42C5-A9D5-AE18FDC3E889}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "..\dependencychecker\UnitTest\UnitTest.csproj", "{5C99080E-76BD-45D3-BA17-F28FD60A04D6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "..\versionchecker\UnitTest\UnitTest.csproj", "{5C99080E-76BD-45D3-BA17-F28FD60A04D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

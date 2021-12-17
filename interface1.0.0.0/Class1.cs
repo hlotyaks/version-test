@@ -8,12 +8,12 @@ namespace iface
 {
     public class Class1 : IClass1
     {
-        int _value=-1;
+        int _value = -1;
 
-        public int Value 
-        { 
-            get => _value; 
-            set => _value = value; 
+        public int Value
+        {
+            get { return _value; }
+            set {_value = value; }
         }
 
         public void DoSomething()

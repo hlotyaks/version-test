@@ -29,11 +29,14 @@ namespace app
             _ifc = new iface.Class1();
 
             string locallibrary = Environment.CurrentDirectory + @"\iface.dll";
+            Version v = Assembly.ReflectionOnlyLoadFrom("C:\\Users\\hlotyaks\\Source\\Repos\\version-test\\app\\bin\\Debug\\iface.dll").GetName().Version;
+            Version v1 = Assembly.LoadFile(locallibrary).GetName().Version;
+
+            locallibrary = Environment.GetEnvironmentVariable("IGXLROOT") + "\\bin\\" + "iface.dll";
 
             var dc = new VersionChecker.VersionChecker();
             var verIGXLBIN = dc.GetLibraryPathVersion(locallibrary);              // the version from IGXLBIN
             var verAPPBIN = dc.GetLibraryPathVersion(locallibrary);      // the version from the app bin
-            var verAPPBUILD = dc.GetLibraryBuildVersion("");            // the version the app was built with
 
             /*
              * Steps for checking if the library is compatible

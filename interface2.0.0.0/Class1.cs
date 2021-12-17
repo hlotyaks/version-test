@@ -12,8 +12,8 @@ namespace iface
 
         public int Value
         {
-            get => _value;
-            set => _value = value;
+            get { return _value; }
+            set { _value = value; }
         }
 
         public void DoSomething()
